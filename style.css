@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px;
+  min-width: 100vh;
+  color: #3C3C3C; }
+
+html, body {
+  width: 100%; }
+
+body {
+  background-color: #fff; }
+
+.yellow-text {
+  color: #FFC12F; }
+
+.logo-name {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: inter; }
