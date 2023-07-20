@@ -7,6 +7,7 @@ html{
     font-size: 16px;
     min-width: 100vh;
     color: #3C3C3C;
+    font-family: Inter;
 }
 
 html,body{
@@ -17,17 +18,37 @@ body{
     background-color: #fff;
 }
 
-//special class
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+//.. variables 
+
+$mainMargin: 0 130px;
+$headFont: Segoe UI;
+$mainFont: Inter;
+
+//..special class
 
 .yellow-text{
     color: #FFC12F
 }
 
-//header
+//..header
 
 .header{
-    
+    display: flex;
+    margin: $mainMargin;
+    justify-content: space-between;
+    margin-top: 30px;
 }
+
+//header logo
 
 .logo-name{
     font-size: 2rem;
@@ -35,5 +56,134 @@ body{
     font-family: inter;
 }
 
+//header nav
+
+.nav-wrapper{
+    display: flex;
+    align-self: center;
+}
+
+.nav-list{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.nav-link{
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: $headFont;
+}
+
+.active-link{
+    color: #FFC12F;
+    text-decoration: underline #FFC12F
+}
+
+//.. main
+
+.main{
+    display: flex;
+    margin: $mainMargin;
+    justify-content: space-between;  
+    margin-top: 90px; 
+    margin-right: 0;
+}
+
+
+.main-text-wrapper {
+    max-width: 580px;
+    margin-top: 43px;
+    .title {
+        font: {
+            size: 3rem;
+            weight: 700;
+            family: $headFont;
+        }
+    }
+    .text{
+        max-width: 510px;
+        margin-top: 2rem;
+        color: #667085;
+        font: {
+            weight: 400;
+            family: $headFont;
+        }
+    }
+}
+
+.btns{
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 4rem;
+    .btn-oval{
+        border: none;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 30px;
+        background-color: #FFC12F;
+    }
+    .link-see-more{
+        display: flex;
+        align-self: center;
+        column-gap: 2rem;
+        .link-text{
+            align-self: center;
+        }
+        .link-img{
+            align-self: center;
+        }
+    }
+
+}
+
+
+.sticker{
+    padding: 12px 22px;
+    border-radius: 7px;
+    display: inline-block;
+    background-color: #FFF2D4;
+    .sticker-text{
+        font-size: 1rem;
+        color:#FFC12F;
+        font-weight: 600;
+        font-family: Inter;
+    }
+}
+
+
+// ..about-service
+
+.about-service{
+    margin: $mainMargin;
+    margin-top: 200px;
+    text-align: center;
+    .title{
+        font: {
+            weight: 700;
+            size: 2.25rem;
+            family: $headFont;
+        }
+    }
+    .text{
+        margin: 0 auto;
+        max-width: 505px;
+        color: #667085;
+        margin-top: 1.875rem;
+    }
+}
+
+
+
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-weight:  700;
+    font-family: Segoe UI;
+    src: url(./fonts/Segoe\ UI\Bold.ttf);
+}
